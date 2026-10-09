@@ -1,0 +1,16 @@
+/*Mi hoja de estilo*/
+
+*{
+    margin: 0; /* esto hace referencia al margen de la propia pagina*/
+    padding: 0%; /* estop es la distancia entre cada unos */
+    box-sizing: border-box; /* es el propiop borde de la pagina lo que la delimita */ 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}

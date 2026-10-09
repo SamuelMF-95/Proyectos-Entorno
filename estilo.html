@@ -1,47 +1,10 @@
 <!DOCTYPE html>
         <meta charset="UTF-8">
     <html>
-        <body>
-            <p>Hola</p>
-             <br>
-             <b>Texto en negrita</b>
-             <br>
-             <i>Texto en cursiva</i>
-            <br>
-             <s>Texto en tachado</s>
-             <br>
-             <em>Texto enfatizado</em>
-             <br>
-            <small>Texto Pequeño</small>
-            <br>
-            <br>
-            X<sub>2</sub>yX<sup>2</sup>
-            <br>
-            <br>
-            <mark>Texto marcado</mark>
-            <br>
-            <q>Pequeña cita</q>
-            <br>
-            <time>19:31</time>
-            <br>
-            <cite>Título de un artículo</cite>
-            <br>
-            <blockquote>
-                Texto largo del artículo al que hacemos referencia
-            </blockquote>
-            <address>
-                 Mfernanda Hoyuela
-                <br>
-                 Vedruna.org
-            </address>
-            <br>
-            <p>Sevilla</p>
-            <p>Hola</p>
-            <p>Adios</p>
-            <hr>Cambiando de tema</hr>
-            <br>
-            <br>
-
+        <head>
+            <title>Mi pagina web</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
             <form action="respuesta.html">
                 <fieldset> 
                     <legend> Datos Personales </legend>
@@ -79,9 +42,27 @@
                     <br>
                     <br>
                     <label for="hora"> Hora </label> 
-                    <input type="time" id="time" name="hora" placeholder="Hora" min="00:00" max="24:59">
+                    <input type="time" id="hora" name="hora" placeholder="Hora" min="00:00" max="24:59">
+                    <br>
+                    <br>
+                    <br>
+                <fieldset>
+                    <legend> Forma de Contacto </legend>
+                    <br>
+                    <input type="radio" id="contact email" name="contact" value="email">
+                    <label for="contact email"> Email personal </label> 
+                    <br>
+                    <br>
+                    <input type="radio" id="contact phone" name="contact" value="telefono">
+                    <label for="contact phone"> Telefono personal </label> 
+                    <br>
+                    <br>
+                    <input type="radio" id="postal contact" name="contact" value="postal">
+                    <label for="postal contact"> Correo postal </label>
+                    <br>
+                    <br> 
+                </fieldset>    
                 </fieldset>
                 <br>
             </form>
-        </body>
     </html>
