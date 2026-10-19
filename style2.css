@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(139, 92, 246, 0.35), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.25), transparent 40%),
+        radial-gradient(circle at 60% 10%, rgba(59, 130, 246, 0.25), transparent 40%),
+        #0f0f1a;
+    background-attachment: fixed;
+}
+
+header {
+    text-align:center;
+    background: radial-gradient(
+        ellipse at center,
+        #ffffff 0%,
+        #00ffff 15%,
+        #0066ff 30%,
+        #8a2be2 45%,
+        #ff00ff 60%,
+        #ff1493 75%,
+        #ff4500 90%,
+        #ffff00 100%
+    );
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    text-shadow: 0 0 12px rgba(255, 0, 255, 0.35);
+    font-size: 2.4rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] 
+{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 16px;
+
+    /* Fondo oscuro ochentero */
+    background: #10051f;
+    color: #00ffff;
+
+    /* Borde inicial */
+    border: 2px solid #692b9c;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    letter-spacing: 1px;
+    caret-color: #ff00ff;
+
+    /* Brillo exterior inicial */
+    box-shadow:
+        0 0 5px rgba(255, 0, 255, 0.25),
+        inset 0 0 8px rgba(138, 43, 226, 0.12);
+}
+
+/* Color del texto de ayuda */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    color: #a879c9;
+    opacity: 1;
+    letter-spacing: 0.5px;
+}
+
+/* Al pasar el ratón */
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+    border-color: #ff00ff;
+
+    box-shadow:
+        0 0 8px #ff00ff,
+        0 0 18px rgba(255, 0, 255, 0.45),
+        inset 0 0 8px rgba(255, 0, 255, 0.15);
+}
+
+/* Al seleccionar el campo */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+
+    border-color: #00ffff;
+    background: #16082b;
+    color: #ffffff;
+
+    box-shadow:
+        0 0 5px #00ffff,
+        0 0 15px #00ffff,
+        0 0 30px rgba(0, 255, 255, 0.65),
+        inset 0 0 12px rgba(0, 255, 255, 0.15);
+
+    transform: translateY(-2px);
+
+    animation: retrowave-pulse 1.5s ease-in-out infinite alternate;
+}
+
+/* Animación del neón */
+@keyframes retrowave-pulse {
+    from {
+        border-color: #00ffff;
+        box-shadow:
+            0 0 5px #00ffff,
+            0 0 12px rgba(0, 255, 255, 0.5),
+            inset 0 0 8px rgba(0, 255, 255, 0.12);
+    }
+
+    to {
+        border-color: #ff00ff;
+        box-shadow:
+            0 0 8px #ff00ff,
+            0 0 20px #ff00ff,
+            0 0 35px rgba(255, 0, 255, 0.55),
+            inset 0 0 12px rgba(255, 0, 255, 0.2);
+    }
+}
+
+/* Accesibilidad: reducir animaciones si se solicita */
+@media (prefers-reduced-motion: reduce) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        transition: none;
+        animation: none;
+    }
+}
