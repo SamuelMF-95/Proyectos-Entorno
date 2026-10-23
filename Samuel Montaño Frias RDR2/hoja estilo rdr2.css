@@ -1,0 +1,232 @@
+/* 
+ESTILOS GENERALES Y VARIABLES
+*/
+:root {
+    --bg-dark: #121212;
+    --card-bg: #1e1e1e;
+    --rdr-red: #c01111;
+    --rdr-red-hover: #e62222;
+    --text-color: #f0f0f0;
+    --text-muted: #aaaaaa;
+    --border-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+CABECERA (HEADER)
+*/
+header {
+    background: linear-gradient(180deg, #1f0505 0%, #121212 100%);
+    border-bottom: 3px solid var(--rdr-red);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--rdr-red);
+    box-shadow: 0 0 15px rgba(192, 17, 17, 0.4);
+    margin-bottom: 0.8rem;
+}
+
+header h1 {
+    font-size: 2.4rem;
+    color: var(--rdr-red);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+/*
+Navegación (NAV)
+*/
+nav {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--rdr-red);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(192, 17, 17, 0.5);
+}
+
+/*
+CONTENIDO PRINCIPAL Y PESTAÑAS (MAIN)
+*/
+main {
+    max-width: 900px;
+    width: 90%;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+/* Estructura de pestañas */
+.pestana {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+/* Ocultar los inputs radio */
+.pestana input[type="radio"] {
+    display: none;
+}
+
+/* Título/Botón de la pestaña (Label) */
+.pestana label {
+    display: block;
+    background-color: #252525;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.pestana label:hover {
+    background-color: #2e2e2e;
+    color: var(--rdr-red);
+}
+
+/* Pestaña seleccionada */
+.pestana input[type="radio"]:checked + label {
+    background-color: var(--rdr-red);
+    color: #ffffff;
+    border-left: 4px solid #ffffff;
+}
+
+/* Mostrar/Ocultar Contenido */
+.contenido {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.pestana input[type="radio"]:checked ~ .contenido {
+    max-height: 1000px; /* Permite desplegar el contenido */
+    padding: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.contenido h2 {
+    color: var(--rdr-red);
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.contenido p {
+    color: #dddddd;
+    font-size: 1rem;
+}
+
+/* Estilos de la Galería (Pestaña 3) */
+.contenido ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido ul img {
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--border-color);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.contenido ul img:hover {
+    transform: scale(1.03);
+    border-color: var(--rdr-red);
+}
+
+.contenido ul li {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.contenido ul li a {
+    display: inline-block;
+    background-color: var(--rdr-red);
+    color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contenido ul li a:hover {
+    background-color: var(--rdr-red-hover);
+}
+
+/*
+PIE DE PÁGINA (FOOTER)
+*/
+footer {
+    background-color: #0d0d0d;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.2rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}

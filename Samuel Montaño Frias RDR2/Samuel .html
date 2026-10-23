@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Plantilla de ejercicio: Rellena los huecos</title>
+    <link rel="stylesheet" href="hoja estilo rdr2.css">
+    <!--
+    ==========================================
+    EJERCICIO: ESTRUCTURA BÁSICA DE HTML
+    Instrucciones:
+    1. Escribe tu nombre y el título de tu sitio.
+    2. Rellena cada etiqueta vacía según indica el comentario.
+    3. No borres la estructura: solo añade contenido.
+    ==========================================
+    -->
+
+</head>
+<body>
+
+    <!-- ================= CABECERA ================= -->
+    <!-- TODO: Añade aquí el logo/nombre del sitio y un título principal -->
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0SwLJIfa28FWcxH25raEom-uyrxT7TrEGUk44PvyqNA&s=10" alt="Foto de red dead redemption"><!-- PON AQUÍ LA IMAGEN DEL LOGO -->
+        <h1>RED DEAD REDEMPTION 2</h1>          <!-- PON AQUÍ EL TÍTULO PRINCIPAL -->
+        <p>Mejor juego de la historia</p>            <!-- PON AQUÍ UNA FRASE O ESLOGAN -->
+    </header>
+
+    <!-- ================= MENÚ ================= -->
+    <!-- TODO: Crea el menú de navegación con 4 enlaces: Inicio, Servicios, Sobre mí, Contacto -->
+    <nav>
+        <ul>
+            <li><a href="#inicio"> Modo Campaña </a></li>
+            <li><a href="#Servicios"> Modo Multijugador </a></li>
+            <li><a href="#Sobre mi"> Galeria </a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= PESTAÑAS ================= -->
+    <!-- TODO: Crea un grupo de pestañas. En cada pestaña:
+           1. Escribe el título de la pestaña
+           2. Rellena el contenido de su panel -->
+    <main>
+
+        <!-- PESTAÑA 1 -->
+        <div class="pestana" name="inicio" id="inicio">
+            <input type="radio" name="pestana" id="p1" checked>
+            <label for="p1"> MODO CAMPAÑA </label>   <!-- TÍTULO DE LA PESTAÑA 1 -->
+
+            <div class="contenido">
+                <h2> Arthur Morgan </h2>              <!-- TÍTULO DEL CONTENIDO -->
+                <p> Protagonista principal de la saga de una historia de redencion </p>                <!-- TEXTO DE LA PESTAÑA 1 -->
+            </div>
+        </div>
+
+        <!-- PESTAÑA 2 -->
+        <div class="pestana" id="Servicios" name=Servicios>
+            <input type="radio" name="pestana" id="p2">
+            <label for="p2"> MODO MULTIJUGADOR </label>   <!-- TÍTULO DE LA PESTAÑA 2 -->
+
+            <div class="contenido">
+                <h2> Personaje creado por ti mismo </h2>
+                <p> Creamos nuestra propia historia con nuestros amigos </p>                <!-- TEXTO DE LA PESTAÑA 2 -->
+            </div>
+        </div>
+
+        <!-- PESTAÑA 3 -->
+        <div class="pestana">
+            <input type="radio" name="pestana" id="p3">
+            <label for="p3"> GALERIA </label>   <!-- TÍTULO DE LA PESTAÑA 3 -->
+
+            <div class="contenido" name="Sobre mi" id="Sobre mi">
+                <ul>
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxsKOFQMMTVpYfKjWyFzAVpM6F8tT5_nMulGxUBX6C_A&s=10" width="320px" height="490px" alt="">       <!-- ELEMENTO 2 -->
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0nwcccb7759XRk8Vd8qo661VBVCoBHeTuuR9Kv1UEmw&s=10" alt="">       <!-- ELEMENTO 1 -->
+
+                </br>
+                </br>
+                    <li> <a href="https://howlongtobeat.com/game/27100"> Duracion de la campaña</a> </li>         <!-- ELEMENTO 3 -->
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <!-- TODO: Añade el pie de página con tu nombre y el año -->
+    <footer>
+        <p> Samuel Montaño Frias - 2026</p>
+    </footer>
+
+</body>
+</html>
