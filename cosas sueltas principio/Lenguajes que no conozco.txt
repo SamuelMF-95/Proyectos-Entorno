@@ -1,0 +1,11 @@
+Lenguajes que no conozco
+
+JavaScript
+Sintaxis de C
+C++
+P.O.O
+Ruby
+Perl
+PHP
+TypeScript
+C#
