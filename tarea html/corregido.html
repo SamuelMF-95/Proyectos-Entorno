@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos corregidos.css" />
+  </head>
+  <body>
+    <header>30/10/2026</header>
+
+    <form action="respuestas.html" method="get">
+      <fieldset>
+        <legend>Datos Personales</legend>
+
+        <label for="nombre">Nombre y Apellidos</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Nombre y Apellidos"
+          required
+          minlength="2"
+          maxlength="50"
+        />
+
+        <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+        <input
+          type="date"
+          id="fecha-nacimiento"
+          name="fecha_nacimiento"
+          required
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="ejemplo@email.com"
+          required
+          minlength="2"
+          maxlength="50"
+        />
+
+        <fieldset>
+          <legend>Sexo</legend>
+          <label for="hombre">
+            <input type="radio" id="hombre" name="sexo" value="hombre" />
+            Hombre</label
+          >
+          <label for="mujer"
+            ><input type="radio" id="mujer" name="sexo" value="mujer" />
+            Mujer</label
+          >
+        </fieldset>
+
+        <label for="curso">Curso en el que te inscribes</label>
+        <select name="curso" id="curso">
+          <option value="">Seleccionar curso</option>
+          <option value="daw">DAW</option>
+          <option value="dam">DAM</option>
+        </select>
+
+        <fieldset>
+          <legend>Aficiones</legend>
+          <label for="aficiones"
+            ><input
+              type="checkbox"
+              id="videojuegos"
+              name="aficiones"
+              value="videojuegos"
+            />
+            Videojuegos</label
+          >
+          <label for="aficiones"
+            ><input
+              type="checkbox"
+              id="musica"
+              name="aficiones"
+              value="musica"
+            />
+            Música</label
+          >
+          <label for="aficiones"
+            ><input
+              type="checkbox"
+              id="deporte"
+              name="aficiones"
+              value="deporte"
+            />
+            Deporte</label
+          >
+        </fieldset>
+
+        <label for="comentarios">Comentarios</label>
+        <textarea
+          name="comentarios"
+          id="comentarios"
+          placeholder="Comentarios"
+        ></textarea>
+
+        <div class="botones">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

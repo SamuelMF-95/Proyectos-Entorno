@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Confirmacion</title>
+    <link rel="stylesheet" href="estilos corregidos.css" />
+  </head>
+  <body>
+    <div id="resultados">
+      <h1>Datos recibidos</h1>
+      <p id="salida"></p>
+    </div>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById("salida").innerHTML =
+        "<strong>Nombre:</strong> " +
+        params.get("nombre") +
+        "<br>" +
+        "<strong>Email:</strong> " +
+        params.get("email") +
+        "<br>" +
+        "<strong>Curso:</strong> " +
+        params.get("curso") +
+        "<br>" +
+        "<strong>Sexo:</strong> " +
+        params.get("sexo") +
+        "<br>" +
+        "<strong>Aficiones:</strong> " +
+        params.getAll("aficiones") +
+        "<br>" +
+        "<strong>Comentarios:</strong> " +
+        params.get("comentarios");
+    </script>
+  </body>
+</html>

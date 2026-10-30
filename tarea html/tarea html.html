@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+        <meta charset="UTF-8">
+    <html>
+        <head>
+            <title>Fromulario</title>
+            <link rel="stylesheet" href="estilos.css">
+        </head>
+        <body>
+            <header>
+                30/10/2026
+            </header>
+            <form action="respuesta.html">
+                <fieldset> 
+                    <legend> Datos Personales </legend>
+
+                    <br>
+
+                    <label for = "nombre"> Nombre y Apellidos </label>
+                    <input 
+                    type = "text" 
+                    id = "nombre" 
+                    name = "nombre y apellidos" 
+                    placeholder="Nombre y Apellidos" 
+                    required minlength="2" maxlength="50">
+
+                    <br>
+                    <br>
+
+                    <label for = "fecha de nacimiento"> Fecha de Nacimiento </label>
+                    <input type = "date" 
+                    id = "apellidos" name = "apellidos" 
+                    placeholder="Fecha de Nacimiento"
+                    required>
+                    
+                    <br>
+                    <br>
+
+                    <label for = "email"> Email </label>
+                    <input type = "email" 
+                    id = "email" 
+                    name = "email" 
+                    placeholder = "example@email.com" 
+                    required minlength="2" maxlength="50">
+                    
+                    <br>
+                    <br>
+                    
+                    <fieldset>
+                        <legend> Sexo </legend>
+                            <label for="sexo"> Hombre </label> 
+                            <input type="radio" 
+                            id="sexo" name="sexo" 
+                            value="sexo">
+
+                    <br>
+                    <br>
+
+                            <label for="sexo"> Mujeres </label>
+                            <input type="radio" 
+                            id="sexo" name="sexo" 
+                            value="sexo">
+                    </fieldset>    
+
+                    <br>
+                    <br>
+
+                    <label for="curso que te inscribes"> Curso que te Inscribes </label>
+                    <select name="curso que te inscribes" 
+                    id="curso que te inscribes">
+                    <option value="1">Seleccionar curso</option>
+                    <option value="2">DAW</option>
+                    <option value="3">DAM</option>
+                    </select>
+    
+                    <br>
+                    <br>
+
+                    <fieldset> 
+                        <legend> Aficiones </legend>
+                            <label for="aficiones"> Videojuegos </label>
+                            <input type="checkbox"
+                            id="aficiones"
+                            name="aficiones"
+                            value="aficiones">
+
+                            <label for="aficiones"> Musica </label>
+                            <input type="checkbox"
+                            id="aficiones"
+                            name="aficiones"
+                            value="aficiones">
+
+                            <label for="aficiones"> Deporte </label>
+                            <input type="checkbox"
+                            id="aficiones"
+                            name="aficiones"
+                            value="aficiones">
+                        </fieldset>
+                    
+                    <br>
+                    <br>
+                    
+                    <label for="comentarios"></label>
+                    <textarea name="comentarios" 
+                    id="comentarios" 
+                    placeholder="Comentarios"></textarea> 
+                   
+                    <br>
+                    <br>
+
+                    <label for="enviar"></label>
+                    <input type="submit">
+
+                    <label for="reset"></label>
+                    <input type="reset">
+
+                <br>
+            </form>
+        </body>    
+    </html>
