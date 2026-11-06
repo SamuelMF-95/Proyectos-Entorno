@@ -1,13 +1,11 @@
-/* 1. Fuente y color de fondo suave para la página (body) */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8; /* Color de fondo suave */
+  background-color: #f0f4f8;
   color: #333333;
   margin: 0;
   padding: 30px;
 }
 
-/* Encabezado con la fecha */
 header {
   text-align: center;
   font-weight: bold;
@@ -16,17 +14,15 @@ header {
   color: #555555;
 }
 
-/* 2. Formulario centrado, ancho máximo, fondo blanco, bordes redondeados y sombra */
 form {
   max-width: 550px;
-  margin: 0 auto; /* Centra el formulario horizontalmente */
-  background-color: #ffffff; /* Fondo blanco */
+  margin: 0 auto;
+  background-color: #ffffff;
   padding: 30px;
-  border-radius: 12px; /* Borde redondeado */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* Sombra elegante */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* Estilos para los fieldsets y leyendas */
 fieldset {
   border: 1px solid #d1d5db;
   border-radius: 8px;
@@ -40,16 +36,14 @@ legend {
   padding: 0 8px;
 }
 
-/* 3. Estilo para los label (en bloque y negrita) */
 label {
-  display: block; /* Muestra los labels en bloque para que bajen de línea */
+  display: block;
   font-weight: bold;
   margin-top: 12px;
   margin-bottom: 6px;
   color: #374151;
 }
 
-/* Corrección para los labels dentro de fieldsets de radios/checkboxes */
 fieldset label {
   display: inline-block;
   font-weight: normal;
@@ -57,7 +51,6 @@ fieldset label {
   margin-top: 5px;
 }
 
-/* Estilos visuales para los inputs de texto, fechas, select y textarea */
 input[type="text"],
 input[type="date"],
 input[type="email"],
@@ -67,7 +60,7 @@ textarea {
   padding: 10px;
   border: 1px solid #cbd5e1;
   border-radius: 6px;
-  box-sizing: border-box; /* Evita que el padding rompa el ancho del 100% */
+  box-sizing: border-box;
   font-size: 14px;
   background-color: #f8fafc;
 }
@@ -77,19 +70,17 @@ textarea {
   resize: vertical;
 }
 
-/* Contenedor de botones */
 .botones {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
 
-/* 4. Estilo para el botón de envío y limpiar: color de fondo, texto legible */
 input[type="submit"],
 input[type="reset"] {
   flex: 1;
-  background-color: #2563eb; /* Color de fondo azul */
-  color: #ffffff; /* Texto legible (blanco) */
+  background-color: #2563eb;
+  color: #ffffff;
   padding: 12px;
   border: none;
   border-radius: 6px;
@@ -99,12 +90,10 @@ input[type="reset"] {
   transition: background-color 0.2s ease-in-out;
 }
 
-/* Color diferenciador para el botón de reset */
 input[type="reset"] {
   background-color: #64748b;
 }
 
-/* Cambio de color al pasar el ratón (:hover) */
 input[type="submit"]:hover {
   background-color: #1d4ed8;
 }
